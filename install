@@ -2,13 +2,13 @@ white='\033[1;37m'
 NC='\033[0m'
 
 echo -e "${white}Actualizando lista de repositorios...${NC}"
-sudo apt-get update
+sudo apt-get update -y
 
 echo -e "${white}Actualizando sistema...${NC}"
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 
 echo -e "${white}Instalando dependencias necesarias...${NC}"
-sudo apt-get install python-software-properties
+sudo apt-get install python-software-properties -y
 
 echo -e "${white}Activando paquetes PPA...${NC}"
-sudo apt-get install software-properties-common
+sudo apt-get install software-properties-common -y
